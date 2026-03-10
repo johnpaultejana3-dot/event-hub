@@ -1,23 +1,15 @@
-import './App.css'
-import Header from './components/Header'
+import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Register from './pages/Register';
 
 function App() {
   return (
-
-    <div className="flex flex-col min-h-screen">
-
-      <Header />
-
-      <main className="flex-1">Main</main>
-
-      <footer className="mt-120 border footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-        <aside>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-        </aside>
-      </footer>
-
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
+  )
 }
 
-export default App
+export default App;
