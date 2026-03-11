@@ -1,16 +1,18 @@
-import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Main from '../components/Main'
+import React from "react";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
+import PageWrapper from "../components/PageWrapper";
+
 
 const Home = () => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <PageWrapper>
             <Header />
-            <Main />
+            <Main>This is the homepage</Main>
             <Footer />
-        </div>
-    )
-}
+        </PageWrapper>
+    );
+};
 
 export default Home;

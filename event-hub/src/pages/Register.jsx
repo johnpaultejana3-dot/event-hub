@@ -1,16 +1,17 @@
-import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Main from '../components/Main'
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Main from "../components/Main";
+import PageWrapper from "../components/PageWrapper";
 
 const Register = () => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <PageWrapper>
             <Header />
-            <Main />
+            <Main>This is the Register page</Main>
             <Footer />
-        </div>
-    )
-}
+        </PageWrapper>
+    );
+};
 
 export default Register;
