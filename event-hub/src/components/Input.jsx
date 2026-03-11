@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Input = () => {
+const Input = ({ label, name, type, className, placeholder, onChange }) => {
     return (
-        <div>Input</div>
-    )
-}
+        <fieldset className="fieldset">
+            <legend className="fieldset-legend">{label}</legend>
+            <input
+                name={name}
+                type={type}
+                className={`input ${className}`}
+                placeholder={placeholder}
+                onChange={onChange}
+            />
+        </fieldset>
+    );
+};
 
-export default Input
+export default Input;
